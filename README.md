@@ -1,2 +1,2 @@
 # AngularDjangoFullStack
- AngularDjangoFullStack-Udemy
+ AngularDjangoFullStack - A Udemy course by Krystian Czekalski
