@@ -4,7 +4,7 @@ from django.views import View
 from .models import Book
 
 
-class Another(View):
+class AnotherX(View):
 
     books = Book.objects.all()
     #books = Book.objects.filter(is_published=True)
@@ -22,5 +22,11 @@ class Another(View):
         return HttpResponse(self.lines)
 
 
-def first(request):
+def firstX(request):
     return HttpResponse('First message from views')
+
+
+def first(request):
+    books = Book.objects.all()
+    # return render(request, 'first_temp.html', {'data': 'this is data from views'})
+    return render(request, 'first_temp.html', {'books': books})
