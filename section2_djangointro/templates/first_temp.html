@@ -12,6 +12,10 @@
     <!-- h2>{{ data }}</h2 -->
     <!-- h2>{{ books }}</h2 -->
     {% for book in books %}
+    <!--
+            {% if book.ispublished %}
+            {% endif %}
+        -->
     <h2>{{ book.title }}</h2>
     {% endfor %}
 </body>
